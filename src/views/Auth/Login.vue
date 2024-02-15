@@ -1,9 +1,10 @@
 <template>
   <div class="h-screen bg-primary w-full">
     <div class="grid grid-cols-12">
-      <div class="col-span-7 flex flex-col bg-left-image-login z-10">
-        <div class="h-[50vh] mt-[10vh] w-full">
-          <div class="w-[80%] m-auto relative">
+      <div class="col-span-7 flex flex-col justify-between align-center bg-left-image-login z-10 h-screen">
+        <div></div>
+        <div class="">
+          <div class="w-[70%] m-auto relative">
             <img :src="img.starImg" class="absolute left-[28vw] top-[-8vh]" />
             <div class="align-middle">
               <p class="noto-sans-bold text-[62px] font-bold text-white leading-10">Hello</p>
@@ -11,6 +12,9 @@
                 Igniculuss 👋🏻
               </p>
             </div>
+            <p class="noto-sans-bold font-bold text-white">
+              Skip repetitive and manual sales-marketing tasks.Get highly productive through automation and save tons of time!
+            </p>
           </div>
         </div>
         <img :src="img.sunImg" alt="Sun Image" class="mx-auto" />
