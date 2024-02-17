@@ -10,4 +10,26 @@
     font-style: normal;
     font-variation-settings: 'wdth' 100;
   }
+  .noto-sans-500 {
+    font-family: 'Noto Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100;
+  }
+  .bg-left-image-login {
+    background-image: url('./assets/img/login-bg.png');
+    background-size: cover;
+    opacity: 0.1;
+  }
+  body {
+    font-family: 'Noto Sans', sans-serif;
+  }
+  @font-face {
+    font-family: 'Avenir';
+    src: url('assets/fonts/avenir_ff/AvenirLTStd-Book.otf');
+  }
+  .avenir-font {
+    font-family: 'Avenir';
+  }
 }
