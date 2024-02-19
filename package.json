@@ -12,8 +12,10 @@
   },
   "dependencies": {
     "flowbite": "^2.3.0",
+    "jquery": "^3.7.1",
     "vue": "^3.4.15",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.2.5",
+    "vue3-select2-component": "^0.1.7"
   },
   "devDependencies": {
     "@iconify/vue": "^4.1.1",

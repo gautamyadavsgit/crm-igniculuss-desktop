@@ -14,12 +14,12 @@
       >Create account</router-link
     >
 
-    <fieldset class="title mt-[1vh]">
+    <fieldset v-if="shouldDisplayLoginWith" class="title mt-[1vh]">
       <legend class="text-[1.953125vh]">Or login with</legend>
     </fieldset>
-    <router-link
+    <router-link v-if="shouldDisplayGoogle"
       to=""
-      class="mx-auto avenir-font py-[1vh] mt-[3vh] rounded-full border border-[#333333] inline-block w-[35.8333333333vw] flex justify-center h-[5.46875vh] text-[1.953125vh]"
+      class="mx-auto avenir-font py-[1vh] mt-[3vh] rounded-full border border-[#333333] inline-block w-[30.8333333333vw] flex justify-center h-[6vh] text-[1.953125vh]"
     >
       <div class="flex items-center m-auto">
         <Icon icon="flat-color-icons:google" class="text-center" />
@@ -35,6 +35,12 @@ export default {
     buttonText: String,
     btnClass: String,
     shouldDisplay: {
+      default: true
+    },
+    shouldDisplayGoogle: {
+      default: true
+    },
+    shouldDisplayLoginWith: {
       default: true
     }
   }

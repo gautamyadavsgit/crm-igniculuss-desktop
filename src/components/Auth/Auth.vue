@@ -4,7 +4,7 @@
     <div class="grid grid-cols-16">
       <div class="col-span-9 flex flex-col justify-between align-center z-10 h-screen">
         <div></div>
-        <div class="">
+        <div v-if="shouldDisplay" class="">
           <div class="w-[70%] m-auto relative mt-[5vh]">
             <img
               :src="img.starImg"
@@ -26,10 +26,8 @@
         </div>
         <img :src="img.sunImg" alt="Sun Image" class="mx-auto w-[17.986vw] h-[13.28125vh]" />
       </div>
-      <div class="col-span-7 bg-white">
-        <slot></slot>
-            
-        
+      <div class="col-span-7 bg-white" :class="addBgClass">
+        <slot v-if="shouldDisplay"></slot>
       </div>
     </div>
   </div>
@@ -41,6 +39,11 @@ import SunImg from '@/assets/img/Union.svg'
 import StarImg from '@/assets/img/Subtract.svg'
 
 export default {
+  props: {
+    shouldDisplay: {
+      default: true
+    }
+  },
   setup() {
     const img = reactive({
       sunImg: SunImg,
@@ -48,6 +51,11 @@ export default {
     })
 
     return { img }
+  },
+  computed: {
+    addBgClass() {
+      return this.shouldDisplay ? '' : '!bg-transparent'
+    }
   }
 }
 </script>

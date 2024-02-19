@@ -11,7 +11,8 @@ module.exports = {
       colors: {
         primary: '#02A7CC',
         seccondary: '#282828',
-        inputBorder: '#D5D5D5'
+        inputBorder: '#D5D5D5',
+        hyperLink : '#4880FF'
       },
       fontFamily: {
         NatoBold: 'Nato-sans-bold'

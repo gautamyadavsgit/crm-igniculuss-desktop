@@ -6,6 +6,7 @@ import AuthVue from '@/components/Auth/Auth.vue'
 import FormLable from '@/components/Form/Label.vue'
 import { Icon } from '@iconify/vue'
 
+
 const app = createApp(App)
 
 app.use(router)
