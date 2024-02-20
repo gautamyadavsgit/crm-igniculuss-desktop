@@ -34,10 +34,6 @@
         </form>
       </div>
     </div>
-
-
-
-
   </auth-vue>
 </template>
 <script>
@@ -52,7 +48,7 @@ export default {
   },
   methods: {
     handleSubmit() {
-      this.$router.push({name:'auth.add-company'})
+      this.$router.push({ name: 'auth.add-company' })
     }
   }
 }

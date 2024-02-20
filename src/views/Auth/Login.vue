@@ -16,6 +16,7 @@ import router from '@/router';
 <script>
 import FormBottom from '@/components/Form/FormBottom.vue'
 import FormInput from '@/components/Form/FormInput.vue'
+
 export default {
   components: {
     FormBottom,
