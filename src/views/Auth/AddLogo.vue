@@ -55,7 +55,7 @@ let modal // Declare modal outside of onMounted so that it's accessible in onUnm
 const handleSubmit = () => {
   // Add your form submission logic here
   // For example, redirect to the home page
-  router.push('/')
+  router.push({ name: 'auth.welcome' })
 }
 
 // lifecycle hooks

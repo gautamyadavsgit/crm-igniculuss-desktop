@@ -7,7 +7,7 @@
         <p class="mt-[1vh] text-[1.5625] nato-bold">
           Enter the one-time password sent to your mobile number.
         </p>
-        <form method="post" @submit="handleSubmit">
+        <form method="post" @submit.prevent="handleSubmit">
           <div class="justify-between flex my-[2vh]">
             <label for="otp" class="nato-sans-500 text-[1.953125vh]">789636487895</label>
             <a href="" class="text-hyperLink underline">Change</a>

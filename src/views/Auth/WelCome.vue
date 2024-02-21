@@ -12,29 +12,27 @@
     <div class="relative p-4 w-[45vw] max-h-full">
       <!-- Modal content -->
       <div
-        class="relative bg-white rounded-[40px] py-[6vh] px-[3vw] noto-sans-500 box-border shadow w-[45vw]"
+        class="relative corona-images bg-white rounded-[40px] py-[2vh] px-[3vw] noto-sans-500 box-border shadow w-[45vw]"
       >
-        <h2 class="text-[2.34375vh] text-center">Add Company Logo</h2>
-        <div class="mt-[2vh] py-[2vh] px-[4vw]">
-          <form @submit.prevent="handleSubmit">
-            <!-- Use @submit.prevent to prevent default form submission -->
-            <label for="company-logo" class="block">
-              <img :src="Clogo" class="m-auto" />
-              <p class="text-center mt-[2vh] text-[1.171875vh] text-[#676767]">
-                Supported formats: JPEG, PNG, GIF, MP4, PDF,
-              </p>
-              <input type="file" id="company-logo" class="hidden" />
-            </label>
+        <div class="py-[1vh] px-[4vw]">
+          <img :src="Tata" class="m-auto" />
+          <p class="text-center text-[3.125vh] mt-[2vh]">CRM</p>
+          <p class="text-[#4880FF] text-center text-[6.93359375vh] mt-[3vh] noto-sans-bold">
+            Welcome
+          </p>
+          <p class="text-center text-[3vh] mt-[1vh] noto-sans-500">Gautam Yadav</p>
+          <p class="text-center text-[2vh] mt-[1vh]">Business Solutions</p>
+          <!-- <form @submit.prevent="handleSubmit"> -->
+          <!-- Use @submit.prevent to prevent default form submission -->
 
-            <form-input inputName="Company Name" />
-            <form-bottom
-              btnClass="!mt-[6vh]"
-              button-text="Verify"
-              :shouldDisplay="false"
-              :shouldDisplayGoogle="false"
-              :shouldDisplayLoginWith="false"
-            ></form-bottom>
-          </form>
+          <form-bottom
+            btnClass="!mt-[6vh] "
+            button-text="Get Started"
+            :shouldDisplay="false"
+            :shouldDisplayGoogle="false"
+            :shouldDisplayLoginWith="false"
+          ></form-bottom>
+          <!-- </form> -->
         </div>
       </div>
     </div>
@@ -48,6 +46,7 @@ import Clogo from '@/assets/img/c-logl.png'
 import FormInput from '@/components/Form/FormInput.vue'
 import FormBottom from '@/components/Form/FormBottom.vue'
 import { useRouter } from 'vue-router'
+import Tata from '@/assets/img/tata.png'
 
 const router = useRouter()
 let modal // Declare modal outside of onMounted so that it's accessible in onUnmounted
@@ -88,3 +87,12 @@ onUnmounted(() => {
   }
 })
 </script>
+
+<style scoped>
+.corona-images {
+  background:
+    url('../../assets/img/corona-left.png') left top 15vh no-repeat,
+    url('../../assets/img/corona-right.png') right top 18vh no-repeat;
+  background-color: white;
+}
+</style>
