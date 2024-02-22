@@ -4,7 +4,7 @@
     <input
       :type="inputType"
       :id="modifiedId"
-      class="border border-inputBorder rounded-lg w-full h-[5.46875vh]"
+      class="border border-inputBorder rounded-lg w-full h-[5.46875vh] max-w-[548px]"
       :class="customClass"
       :placeholder="inputPlaceholder"
     />

@@ -1,7 +1,7 @@
 <template>
   <div class="text-center">
     <button
-      class="leading-[2.990234375vh] mt-[8vh] w-[22.9166666667vw] h-[6.93359375vh] py-[1.953125vh] px-[2.5vw] bg-primary text-white rounded-md text-[2.34375vh] nato-sans-bold"
+      class="leading-[2.990234375vh] max-w-[330px] mt-[8vh] w-[22.9166666667vw] h-[6.93359375vh] py-[1.953125vh] px-[2.5vw] bg-primary text-white rounded-md text-[2.34375vh] nato-sans-bold"
       :class="btnClass"
     >
       {{ buttonText }}
@@ -19,7 +19,7 @@
     </fieldset>
     <router-link v-if="shouldDisplayGoogle"
       to=""
-      class="mx-auto avenir-font py-[1vh] mt-[3vh] rounded-full border border-[#333333] inline-block w-[30.8333333333vw] flex justify-center h-[6vh] text-[1.953125vh]"
+      class="mx-auto avenir-font py-[1vh] mt-[3vh] max-w-[516px] rounded-full border border-[#333333] inline-block w-[30.8333333333vw] flex justify-center h-[6vh] text-[1.953125vh]"
     >
       <div class="flex items-center m-auto">
         <Icon icon="flat-color-icons:google" class="text-center" />

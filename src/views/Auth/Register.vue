@@ -1,6 +1,6 @@
 <template>
   <auth-vue>
-    <div class="pt-[4vh] w-[38.0555555556vw] m-auto">
+    <div class="pt-[4vh] max-w-[548px] w-[38.0555555556vw] m-auto">
       <p class="noto-sans-bold text-seccondary text-[3.90625vh]">Create Your Account</p>
       <div class="mt-[5vh]">
         <form action="javascript:void(0)" @submit="handleSubmit" method="post">

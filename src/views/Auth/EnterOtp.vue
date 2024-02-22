@@ -1,6 +1,6 @@
 <template>
   <auth-vue>
-    <div class="pt-[4vh] w-[38.0555555556vw] m-auto">
+    <div class="pt-[4vh] max-w-[548px] w-[38.0555555556vw] m-auto">
       <div class="mt-[20vh]">
         <p class="mt-[6vh] noto-sans-500">Instant access</p>
         <p class="mt-[10vh] noto-sans-500 text-[2.34375vh] nato-bold">Verify Your Sign-up</p>

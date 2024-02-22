@@ -1,7 +1,7 @@
 import router from '@/router';
 <template>
   <auth-vue>
-    <div class="pt-[18vh] w-[38.0555555556vw] m-auto">
+    <div class="pt-[18vh] w-[38.0555555556vw] max-w-[548px] m-auto">
       <p class="noto-sans-bold text-seccondary text-[3.90625vh]">Log In</p>
       <div class="mt-[5vh]">
         <form>
