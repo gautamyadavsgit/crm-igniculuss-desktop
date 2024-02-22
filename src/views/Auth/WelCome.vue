@@ -14,26 +14,27 @@
       <div
         class="relative corona-images bg-white rounded-[40px] py-[2vh] px-[3vw] noto-sans-500 box-border shadow w-[45vw]"
       >
-        <div class="py-[1vh] px-[4vw]">
-          <img :src="Tata" class="m-auto" />
-          <p class="text-center text-[3.125vh] mt-[2vh]">CRM</p>
-          <p class="text-[#4880FF] text-center text-[6.93359375vh] mt-[3vh] noto-sans-bold">
-            Welcome
-          </p>
-          <p class="text-center text-[3vh] mt-[1vh] noto-sans-500">Gautam Yadav</p>
-          <p class="text-center text-[2vh] mt-[1vh]">Business Solutions</p>
-          <!-- <form @submit.prevent="handleSubmit"> -->
-          <!-- Use @submit.prevent to prevent default form submission -->
+        <form @submit.prevent="handleSubmit">
+          <div class="py-[1vh] px-[4vw]">
+            <img :src="Tata" class="m-auto" />
+            <p class="text-center text-[3.125vh] mt-[2vh]">CRM</p>
+            <p class="text-[#4880FF] text-center text-[6.93359375vh] mt-[3vh] noto-sans-bold">
+              Welcome
+            </p>
+            <p class="text-center text-[3vh] mt-[1vh] noto-sans-500">Gautam Yadav</p>
+            <p class="text-center text-[2vh] mt-[1vh]">Business Solutions</p>
+            <!-- <form @submit.prevent="handleSubmit"> -->
+            <!-- Use @submit.prevent to prevent default form submission -->
 
-          <form-bottom
-            btnClass="!mt-[6vh] "
-            button-text="Get Started"
-            :shouldDisplay="false"
-            :shouldDisplayGoogle="false"
-            :shouldDisplayLoginWith="false"
-          ></form-bottom>
-          <!-- </form> -->
-        </div>
+            <form-bottom
+              btnClass="!mt-[6vh] "
+              button-text="Get Started"
+              :shouldDisplay="false"
+              :shouldDisplayGoogle="false"
+              :shouldDisplayLoginWith="false"
+            ></form-bottom>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -54,7 +55,7 @@ let modal // Declare modal outside of onMounted so that it's accessible in onUnm
 const handleSubmit = () => {
   // Add your form submission logic here
   // For example, redirect to the home page
-  router.push('/')
+  window.location.href = '/dashboard'
 }
 
 // lifecycle hooks
