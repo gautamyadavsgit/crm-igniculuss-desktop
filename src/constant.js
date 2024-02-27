@@ -1,6 +1,6 @@
 
 const define = [
-    {mode:'m' }
+    {mode:'' }
 ]
 
 export default define
