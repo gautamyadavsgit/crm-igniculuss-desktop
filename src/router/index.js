@@ -2,6 +2,7 @@ import AuthRoutes from './Auth/Index'
 import MobileAuthRoutes from '../mobile/router/index.js'
 import { createWebHistory, createRouter } from 'vue-router'
 import constants from '../constant.js'
+import DashBoardRoutes from '@/views/Dashboard/router'
 let routes = []
 console.log(constants[0].mode)
 if (constants[0].mode == 'm') {
@@ -10,10 +11,10 @@ if (constants[0].mode == 'm') {
   routes = [
     ...AuthRoutes,
     {
-      path: '/dashboardMain',
-      redirect: { name: 'DashBoard' },
+      path: '/',
+      redirect: { name: 'dashboard.index' },
       component: () => import('@/views/Dashboard/template.vue'),
-      children: [...DashboardRoutes]
+      children: [...DashBoardRoutes]
     }
   ]
 }

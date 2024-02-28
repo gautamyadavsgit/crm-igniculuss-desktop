@@ -32,4 +32,10 @@
   .avenir-font {
     font-family: 'Avenir';
   }
+  a.active {
+    background-color: #4880ff;
+  }
+  a.active span{
+    color: white;
+  }
 }

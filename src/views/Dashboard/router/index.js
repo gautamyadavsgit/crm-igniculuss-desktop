@@ -5,3 +5,4 @@ const DashBoardRoutes = [
     component:() => import('@/views/Dashboard/Pages/Dashboard.vue')
   }
 ]
+export default DashBoardRoutes;

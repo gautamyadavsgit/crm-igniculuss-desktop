@@ -2,7 +2,7 @@ const AuthRoutes = [
   {
     path: '/',
     name: 'auth.login',
-    component: () => import(/* webpackChunkName: "Login" */ '@/views/Auth/Login.vue')
+    component: () => import('@/views/Auth/Login.vue')
   },
   {
     path: '/register',
