@@ -75,7 +75,9 @@
           </div>
         </div>
       </div>
-      <div class="col-span-10"></div>
+      <div class="col-span-10">
+<nav-bar></nav-bar>
+      </div>
     </div>
     <!-- <router-view mode="out-in" v-slot="{ Component, route }"> -->
     <!-- Use any custom transition and  to `fade` -->
@@ -101,4 +103,5 @@ import CallVolume from '@/assets/img/icons/call-volume-svgrepo-com 1.png'
 import ReportsIcon from '@/assets/img/icons/brand-google-analytics-svgrepo-com 1.png'
 import SalesOrder from "@/assets/img/icons/Group.png"
 import AnalyticsIcon from "@/assets/img/icons/analytics-business-chart-svgrepo-com 1.png"
+import NavBar from './Components/NavBar.vue'
 </script>
