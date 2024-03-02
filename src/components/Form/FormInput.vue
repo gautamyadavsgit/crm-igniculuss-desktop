@@ -1,10 +1,10 @@
 <template>
-  <div class="mt-[2vh]">
+  <div class="mt-[2vh] m-auto">
     <form-label :htmlFor="modifiedId">{{ inputName }} </form-label>
     <input
       :type="inputType"
       :id="modifiedId"
-      class="border border-inputBorder rounded-lg w-full h-[5.46875vh] max-w-[548px]"
+      class="border border-inputBorder rounded-lg w-full h-[5.46875vh] max-w-[376px]"
       :class="customClass"
       :placeholder="inputPlaceholder"
     />

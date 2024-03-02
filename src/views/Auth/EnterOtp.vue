@@ -1,12 +1,15 @@
 <template>
   <auth-vue>
-    <div class="pt-[4vh] max-w-[548px] w-[38.0555555556vw] m-auto">
-      <div class="mt-[20vh]">
-        <p class="mt-[6vh] noto-sans-500">Instant access</p>
-        <p class="mt-[10vh] noto-sans-500 text-[2.34375vh] nato-bold">Verify Your Sign-up</p>
-        <p class="mt-[1vh] text-[1.5625] nato-bold">
-          Enter the one-time password sent to your mobile number.
-        </p>
+    <div class="mt-[20vh] max-w-[576px] m-auto">
+      <form-heading tagLine="Enter the one-time password sent to your mobile number."
+        >Verify Your sign up
+        <template v-slot:para
+          >Enter the one-time password sent to your mobile number.</template
+        ></form-heading
+      >
+    </div>
+    <div class="pt-[4vh] max-w-[376px] w-[38.0555555556vw] m-auto">
+      <div class="]">
         <form method="post" @submit.prevent="handleSubmit">
           <div class="justify-between flex my-[2vh]">
             <label for="otp" class="nato-sans-500 text-[1.953125vh]">789636487895</label>
@@ -15,7 +18,7 @@
           <input
             :type="inputType"
             :id="modifiedId"
-            class="border border-primary rounded-lg w-full h-[5.46875vh]"
+            class="border border-primary max-w-[376px] rounded-lg w-full h-[5.46875vh]"
             :class="customClass"
             :placeholder="inputPlaceholder"
           />
@@ -39,11 +42,13 @@
 <script>
 import FormBottom from '@/components/Form/FormBottom.vue'
 import FormInput from '@/components/Form/FormInput.vue'
+import FormHeading from '@/components/Form/FormHeading.vue'
 // import Select2 from 'vue3-select2-component'
 export default {
   components: {
     FormBottom,
-    FormInput
+    FormInput,
+    FormHeading
     // Select2
   },
   methods: {

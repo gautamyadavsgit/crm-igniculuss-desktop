@@ -2,7 +2,7 @@
   <div class="h-screen w-full bg-primary">
     <!-- <div class="bg-left-image-login h-screen"></div> -->
     <div class="grid grid-cols-16">
-      <div class="col-span-9 flex flex-col justify-between align-center z-10 h-screen">
+      <div class="col-span-10 flex flex-col justify-between align-center z-10 h-screen">
         <div></div>
         <div v-if="shouldDisplay" class="">
           <div class="w-[70%] m-auto relative mt-[5vh]">
@@ -26,7 +26,7 @@
         </div>
         <img :src="img.sunImg" alt="Sun Image" class="mx-auto w-[17.986vw] h-[13.28125vh]" />
       </div>
-      <div class="col-span-7 bg-white" :class="addBgClass">
+      <div class="col-span-6 bg-white" :class="addBgClass">
         <slot v-if="shouldDisplay"></slot>
       </div>
     </div>
