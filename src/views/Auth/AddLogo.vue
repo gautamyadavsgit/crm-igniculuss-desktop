@@ -26,7 +26,7 @@
               <input type="file" id="company-logo" class="hidden" />
             </label>
 
-            <form-input inputName="Company Name" />
+            <form-input inputName="Company Name"  />
             <form-bottom
               btnClass="!mt-[6vh]"
               button-text="Verify"

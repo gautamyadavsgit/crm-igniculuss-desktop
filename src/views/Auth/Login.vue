@@ -30,7 +30,7 @@ import FormBottom from '@/components/Form/FormBottom.vue'
 import FormInput from '@/components/Form/FormInput.vue'
 import FormHeading from '@/components/Form/FormHeading.vue'
 import { Form, Field, ErrorMessage } from 'vee-validate'
-
+import * as yup from 'yup';
 const formData = ref({
   username: '',
   password: ''
